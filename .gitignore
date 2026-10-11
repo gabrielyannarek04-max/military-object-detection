@@ -1,0 +1,35 @@
+﻿# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model weights and archives (distributed via GitHub Releases)
+*.pt
+*.pth
+*.onnx
+*.zip
+runs/
+
+# Datasets
+/data/
+Military-vehicles-detection-1/
+dataset/
+
+# Local artifacts
+unzipped_weights/
+val_batch*.jpg
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
