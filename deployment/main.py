@@ -23,10 +23,11 @@ app = FastAPI(
 @lru_cache(maxsize=1)
 def get_model():
     """Load and cache the YOLO model. Raises FileNotFoundError if weights are missing."""
-    from ultralytics import YOLO
-
     if not os.path.exists(MODEL_PATH):
         raise FileNotFoundError(f"Model weights not found at '{MODEL_PATH}'")
+
+    from ultralytics import YOLO
+
     return YOLO(MODEL_PATH)
 
 
